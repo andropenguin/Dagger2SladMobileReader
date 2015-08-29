@@ -1,4 +1,4 @@
-# A modified version of andropenguin/SladMobileRssReader which tests UI using Google Dagger 2
+# A modified version of andropenguin/SladMobileRssReader which tests UI using Google Dagger 2 add Espresso
 
 # What is this?
 
