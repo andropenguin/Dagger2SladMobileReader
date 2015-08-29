@@ -1,4 +1,4 @@
-package com.sarltokyo.dagger2sladmobilereader.data;
+package com.sarltokyo.dagger2sladmobilereader.model;
 
 /**
  * Created by osabe on 15/08/16.

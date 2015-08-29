@@ -1,4 +1,4 @@
-package com.sarltokyo.dagger2sladmobilereader.data;
+package com.sarltokyo.dagger2sladmobilereader.model;
 
 import java.util.List;
 

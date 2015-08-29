@@ -11,15 +11,13 @@ public class App extends Application {
 
     private static App sInstance;
     private RssDataComponent component;
-    private String mParam;
 
     @Override
     public void onCreate() {
         super.onCreate();
 
         sInstance = this;
-//        component = RssDataComponent.Initializer.init(false, mParam);
-        component = RssDataComponent.Initializer.init(false, RssListFragment.RSS_FEED_URL);
+        component = RssDataComponent.Initializer.init(false);
     }
 
     public static App getInstance() {
@@ -31,11 +29,7 @@ public class App extends Application {
     }
 
     public void setMockMode(boolean useMock) {
-        component = RssDataComponent.Initializer.init(useMock, mParam);
+        component = RssDataComponent.Initializer.init(useMock);
     }
-
-//    public void setParm(String param) {
-//        mParam = param;
-//    }
 }
 

@@ -1,7 +1,7 @@
 package com.sarltokyo.dagger2sladmobilereader.module;
 
-import com.sarltokyo.dagger2sladmobilereader.data.RssApi;
-import com.sarltokyo.dagger2sladmobilereader.data.RssData;
+import com.sarltokyo.dagger2sladmobilereader.model.RssApi;
+import com.sarltokyo.dagger2sladmobilereader.model.RssData;
 import static org.mockito.Mockito.mock;
 
 import dagger.Module;

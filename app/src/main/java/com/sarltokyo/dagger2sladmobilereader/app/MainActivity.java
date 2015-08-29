@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.sarltokyo.dagger2sladmobilereader.data.Item;
+import com.sarltokyo.dagger2sladmobilereader.model.Item;
 
 
 public class MainActivity extends AppCompatActivity

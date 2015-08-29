@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import com.sarltokyo.dagger2sladmobilereader.app.R;
-import com.sarltokyo.dagger2sladmobilereader.data.Item;
+import com.sarltokyo.dagger2sladmobilereader.model.Item;
 
 import java.util.List;
 

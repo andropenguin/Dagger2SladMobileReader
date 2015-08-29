@@ -2,8 +2,7 @@ package com.sarltokyo.dagger2sladmobilereader;
 
 import android.test.ActivityInstrumentationTestCase2;
 import com.sarltokyo.dagger2sladmobilereader.app.MainActivity;
-import com.sarltokyo.dagger2sladmobilereader.app.RssListFragment;
-import com.sarltokyo.dagger2sladmobilereader.data.RssData;
+import com.sarltokyo.dagger2sladmobilereader.model.RssData;
 
 import javax.inject.Inject;
 
@@ -25,7 +24,6 @@ public class InjectedBaseActivityTest extends ActivityInstrumentationTestCase2<M
 
         App app =
                 (App)getInstrumentation().getTargetContext().getApplicationContext();
-//        app.setParm(RssListFragment.RSS_FEED_URL); // todo
         app.setMockMode(true);
         app.component().inject(this);
     }
@@ -34,8 +32,4 @@ public class InjectedBaseActivityTest extends ActivityInstrumentationTestCase2<M
     protected void tearDown() throws Exception {
         App.getInstance().setMockMode(false);
     }
-
-//    protected RssData getRssData() {
-//        return mockRssData;
-//    }
 }

@@ -10,13 +10,12 @@ import android.widget.ListView;
 import com.sarltokyo.dagger2sladmobilereader.app.MainActivity;
 import com.sarltokyo.dagger2sladmobilereader.app.R;
 import com.sarltokyo.dagger2sladmobilereader.app.RssListFragment;
-import com.sarltokyo.dagger2sladmobilereader.data.Item;
+import com.sarltokyo.dagger2sladmobilereader.model.Item;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,9 +81,7 @@ public class MainActivityTest extends InjectedBaseActivityTest {
                     .check(matches(withText("dummy text" + i)));
         }
 
-
         getInstrumentation().removeMonitor(monitor);
-
     }
 
     @Test
@@ -154,7 +151,7 @@ public class MainActivityTest extends InjectedBaseActivityTest {
     }
 
     @Test
-    public void testIsDisplayedByIOException() throws Exception {
+    public void testToastIsDisplayedByIOException() throws Exception {
 
         when(mockRssData.isSuccess()).thenReturn(false);
         when(mockRssData.getErrorMessage()).thenReturn("IOException");
@@ -165,7 +162,7 @@ public class MainActivityTest extends InjectedBaseActivityTest {
     }
 
     @Test
-    public void testIsDisplayedByXmlPullParserException() throws Exception {
+    public void testToastIsDisplayedByXmlPullParserException() throws Exception {
 
         when(mockRssData.isSuccess()).thenReturn(false);
         when(mockRssData.getErrorMessage()).thenReturn("XmlPullParserException");
@@ -238,6 +235,5 @@ public class MainActivityTest extends InjectedBaseActivityTest {
             }
         };
     }
-
 }
 
