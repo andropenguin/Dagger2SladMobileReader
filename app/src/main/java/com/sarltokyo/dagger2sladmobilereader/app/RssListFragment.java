@@ -124,7 +124,7 @@ public class RssListFragment extends ListFragment
     @Override
     public void onLoadFinished(Loader<RssData> loader, RssData data) {
         if (data == null) {
-            Toast.makeText(getActivity(), "Some error occured", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), "Some error occurred", Toast.LENGTH_LONG).show();
         }
         if (data.isSuccess()) {
             setRssResult(data.getItems());
